@@ -1,4 +1,4 @@
-﻿package app.usuario;
+package app.usuario;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

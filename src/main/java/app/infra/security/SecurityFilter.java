@@ -1,4 +1,4 @@
-﻿package app.infra.security;
+package app.infra.security;
 
 import app.usuario.UsuarioRepository;
 import jakarta.servlet.FilterChain;

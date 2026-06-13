@@ -1,4 +1,4 @@
-﻿package app.infra.security;
+package app.infra.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

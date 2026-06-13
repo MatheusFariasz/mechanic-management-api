@@ -1,4 +1,4 @@
-﻿package app.controller;
+package app.controller;
 
 import app.infra.security.DadosTokenJWT;
 import app.infra.security.TokenService;

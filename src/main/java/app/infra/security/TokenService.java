@@ -1,4 +1,4 @@
-﻿package app.infra.security;
+package app.infra.security;
 
 import app.usuario.Usuario;
 import com.auth0.jwt.JWT;
