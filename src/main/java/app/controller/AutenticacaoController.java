@@ -9,11 +9,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/login")
 public class AutenticacaoController {
+
+    @Autowired
+    private PasswordEncoder encoder;
 
     @Autowired
     private AuthenticationManager manager;
@@ -36,4 +40,8 @@ public class AutenticacaoController {
         return "O Controller esta funcionando!";
     }
 
+    @GetMapping("/senha")
+    public String senha() {
+        return encoder.encode("123456");
+    }
 }
