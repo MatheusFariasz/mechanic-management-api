@@ -20,3 +20,8 @@ api:
   security:
     token:
       secret: ${API_SECURITY_TOKEN_SECRET:12345678}
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web: DEBUG
